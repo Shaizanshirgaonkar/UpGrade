@@ -5,7 +5,7 @@ const orderSchema = mongoose.Schema(
     user: {
       type: mongoose.Schema.Types.ObjectId,
       required: true,
-      ref: "User,",
+      ref: "User",
     },
     orderItems: [
       {
@@ -26,11 +26,11 @@ const orderSchema = mongoose.Schema(
       postalCode: { type: String, required: true },
       country: { type: String, required: true },
     },
-    PaymentMethod: {
+    paymentMethod: {
       type: String,
       required: true,
     },
-    paymentresult: {
+    paymentResult: {
       id: { type: String },
       status: { type: String },
       update_time: { type: String },
@@ -57,7 +57,7 @@ const orderSchema = mongoose.Schema(
       default: 0.0,
     },
     isPaid: {
-      tpe: Boolean,
+      type: Boolean,
       required: true,
       default: false,
     },
