@@ -32,9 +32,7 @@ const LoginScreen = () => {
             placeholder="Enter password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-          >
-            {" "}
-          </Form.Control>
+          ></Form.Control>
         </Form.Group>
 
         <Button type="submit" variant="primary" className="mt-2">
